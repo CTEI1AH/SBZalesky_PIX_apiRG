@@ -1,0 +1,4 @@
+InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
+510474,"Waste management services",72484,14496.8,86980.8,USD,2017-04-26
+638111,"Various paper supplies",233545,46709,280254,RON,2017-04-23
+758055,"Concierge Services",204432,40886.4,245318,RON,2017-04-24
