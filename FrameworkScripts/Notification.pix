@@ -11,6 +11,7 @@
         <Parent z:Ref="i2" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <IsCollapsed>false</IsCollapsed>
         <Text>Описание:
 Скрипт для отправки уведомлений. По умолчанию добавлены три типа уведомлений: в случае успешного окончания работы (1), в случае возникновения бизнес-исключения (2), в случае системного исключения (3). 
 Разработчик по своему усмотрению может добавлять дополнительные типы уведомлений, связывая с активностью "Условный оператор" новые контейнеры.
@@ -27,6 +28,7 @@
         <Parent z:Ref="i2" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <IsCollapsed>false</IsCollapsed>
         <Text>Настройка подключения к почте</Text>
       </AbstractStep>
       <AbstractStep z:Id="i5" i:type="ExecutedStep">
@@ -38,6 +40,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>','</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -45,11 +48,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>char_separator</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -65,6 +70,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dict_config["MailServer"].ToString()</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -72,11 +78,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_server</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -92,6 +100,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dict_config["MailCred_login"].ToString()</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -99,11 +108,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_mailAddress</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -119,6 +130,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dict_config["MailRecip"].ToString()</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -126,11 +138,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_mailRecip</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -146,6 +160,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>dict_config["MailAdmin"].ToString()</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -153,11 +168,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_mailAdmin</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -173,6 +190,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>string.Join(char_separator, $"{str_mailRecip}{char_separator}{str_mailAdmin}".ToLower().Split(char_separator).Distinct())</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -180,11 +198,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_mailAll</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -200,6 +220,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_mailAll.Trim(char_separator)</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -207,11 +228,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_mailAll</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -227,6 +250,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>""</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -234,11 +258,13 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_sendParameters</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -256,6 +282,7 @@
                 <PropertyName>Value</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>$"{dict_config["MessageBody"]}".Replace("\n","&lt;br&gt;")</_expression>
+                <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
@@ -263,11 +290,13 @@
                 <PropertyName>To</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>dict_config["MessageBody"]</_expression>
+                <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
@@ -287,6 +316,7 @@
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>"&lt;b&gt;Параметры:&lt;/b&gt; &lt;br&gt;"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
@@ -294,11 +324,13 @@
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_sendParameters</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -316,6 +348,7 @@
                             <PropertyName>Value</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>""</_expression>
+                            <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
@@ -323,11 +356,13 @@
                             <PropertyName>To</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>str_new</_expression>
+                            <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
@@ -347,6 +382,7 @@
                                     <PropertyName>Value</PropertyName>
                                     <_dataType>Expression</_dataType>
                                     <_expression>$"&lt;b&gt;{str_key}&lt;/b&gt;: &lt;a href='file://{dict_sendParameters[str_key]}'&gt;{Path.GetFileName(dict_sendParameters[str_key].ToString())}&lt;a/&gt;"</_expression>
+                                    <_screenShotBase64 i:nil="true" />
                                     <_value i:nil="true" />
                                     <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                   </PropertyValue>
@@ -354,11 +390,13 @@
                                     <PropertyName>To</PropertyName>
                                     <_dataType>Expression</_dataType>
                                     <_expression>str_new</_expression>
+                                    <_screenShotBase64 i:nil="true" />
                                     <_value i:nil="true" />
                                     <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                                 <RetryCount>-1</RetryCount>
@@ -370,6 +408,7 @@
                             <Parent z:Ref="i42" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                             <RetryCount>-1</RetryCount>
@@ -387,6 +426,7 @@
                                     <PropertyName>Value</PropertyName>
                                     <_dataType>Expression</_dataType>
                                     <_expression>$"&lt;b&gt;{str_key}&lt;/b&gt;: {dict_sendParameters[str_key]}"</_expression>
+                                    <_screenShotBase64 i:nil="true" />
                                     <_value i:nil="true" />
                                     <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                   </PropertyValue>
@@ -394,11 +434,13 @@
                                     <PropertyName>To</PropertyName>
                                     <_dataType>Expression</_dataType>
                                     <_expression>str_new</_expression>
+                                    <_screenShotBase64 i:nil="true" />
                                     <_value i:nil="true" />
                                     <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                                 <RetryCount>-1</RetryCount>
@@ -410,6 +452,7 @@
                             <Parent z:Ref="i42" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                             <RetryCount>-1</RetryCount>
@@ -424,11 +467,13 @@
                             <PropertyName>Condition</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>Path.Exists($"{dict_sendParameters[str_key]}")</_expression>
+                            <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
@@ -444,6 +489,7 @@
                             <PropertyName>Value</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"{str_sendParameters}{str_new}&lt;br&gt;"</_expression>
+                            <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
@@ -451,11 +497,13 @@
                             <PropertyName>To</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>str_sendParameters</_expression>
+                            <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
@@ -470,6 +518,7 @@
                         <PropertyName>Collection</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>dict_sendParameters.Keys</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
@@ -477,6 +526,7 @@
                         <PropertyName>Iterator</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_key</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
@@ -484,11 +534,13 @@
                         <PropertyName>Counter</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression></_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -504,6 +556,7 @@
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"{str_sendParameters}&lt;br&gt;"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
@@ -511,11 +564,13 @@
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_sendParameters</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -527,6 +582,7 @@
                 <Parent z:Ref="i33" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
@@ -539,6 +595,7 @@
                 <Parent z:Ref="i33" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
@@ -553,11 +610,13 @@
                 <PropertyName>Condition</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>dict_sendParameters.Keys.Count &gt; 0</_expression>
+                <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
@@ -577,6 +636,7 @@
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>""</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
@@ -584,11 +644,13 @@
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_screenPath</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -604,6 +666,7 @@
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>""</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
@@ -611,11 +674,13 @@
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_screenType</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -635,6 +700,7 @@
                                 <PropertyName>Value</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>"SUCCESS"</_expression>
+                                <_screenShotBase64 i:nil="true" />
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
@@ -642,11 +708,13 @@
                                 <PropertyName>To</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>str_screenType</_expression>
+                                <_screenShotBase64 i:nil="true" />
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                             <RetryCount>-1</RetryCount>
@@ -658,6 +726,7 @@
                         <Parent z:Ref="i71" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
@@ -675,6 +744,7 @@
                                 <PropertyName>Value</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>"ERROR"</_expression>
+                                <_screenShotBase64 i:nil="true" />
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
@@ -682,11 +752,13 @@
                                 <PropertyName>To</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>str_screenType</_expression>
+                                <_screenShotBase64 i:nil="true" />
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                             <RetryCount>-1</RetryCount>
@@ -701,11 +773,13 @@
                             <PropertyName>Condition</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>int_notifyType==2 || int_notifyType==3</_expression>
+                            <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
@@ -723,6 +797,7 @@
                                 <PropertyName>Value</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>"SCREEN"</_expression>
+                                <_screenShotBase64 i:nil="true" />
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
@@ -730,11 +805,13 @@
                                 <PropertyName>To</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>str_screenType</_expression>
+                                <_screenShotBase64 i:nil="true" />
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                             <RetryCount>-1</RetryCount>
@@ -746,6 +823,7 @@
                         <Parent z:Ref="i71" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
@@ -760,11 +838,13 @@
                         <PropertyName>Condition</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>int_notifyType==1</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -780,6 +860,7 @@
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"FrameworkScripts\TakeScreenshot.pix"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
@@ -787,6 +868,7 @@
                         <PropertyName>Parameters</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
                           <d13p1:ArgumentItem z:Id="i89">
                             <d13p1:ArgumentName>str_screenPath</d13p1:ArgumentName>
@@ -806,42 +888,39 @@
                         </_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i92">
-                        <PropertyName>Timeout</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:int">0</_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Сделать скриншот</Text>
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i93" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i92" i:type="ExecutedStep">
                     <Childs />
                     <Id>632f2cc8-139c-43b5-8228-c5e3fe0959b9</Id>
                     <Parent z:Ref="i64" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i94">
+                      <PropertyValue z:Id="i93">
                         <PropertyName>List</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>list_attaches</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i95">
+                      <PropertyValue z:Id="i94">
                         <PropertyName>Object</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_screenPath</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -853,18 +932,20 @@
                 <Parent z:Ref="i63" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i96" i:type="ExecutedStep">
+              <AbstractStep z:Id="i95" i:type="ExecutedStep">
                 <Childs />
                 <Id>b70e9d8b-75d9-4bfe-a9fe-f64e4849a9cf</Id>
                 <Parent z:Ref="i63" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
@@ -875,15 +956,17 @@
             <Id>a71cf1d4-28b3-4974-8df0-d49b11b0c407</Id>
             <Parent z:Ref="i29" />
             <PropertyValues>
-              <PropertyValue z:Id="i97">
+              <PropertyValue z:Id="i96">
                 <PropertyName>Condition</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>bool_takeScreenshot</_expression>
+                <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
@@ -895,200 +978,185 @@
         <Parent z:Ref="i2" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
         <Text>Дополнительные настройки</Text>
         <_activityFullName>BR.Core.Base.Container</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i98" i:type="CommentStep">
+      <AbstractStep z:Id="i97" i:type="CommentStep">
         <Childs />
         <Id>1f123753-fe5e-444d-ba8a-92161acd0405</Id>
         <Parent z:Ref="i2" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <IsCollapsed>false</IsCollapsed>
         <Text>Выбор типа и отправка</Text>
       </AbstractStep>
-      <AbstractStep z:Id="i99" i:type="ExecutedStep">
+      <AbstractStep z:Id="i98" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i100" i:type="ExecutedStep">
+          <AbstractStep z:Id="i99" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i101" i:type="ExecutedStep">
+              <AbstractStep z:Id="i100" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i102" i:type="CommentStep">
+                  <AbstractStep z:Id="i101" i:type="CommentStep">
                     <Childs />
                     <Id>df9800aa-c43b-4f51-85a5-caceb236b9cb</Id>
-                    <Parent z:Ref="i101" />
+                    <Parent z:Ref="i100" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <IsCollapsed>false</IsCollapsed>
                     <Text>Отправка необходимых уведомлений и/или выполнение иных действий в случае успешного завершения работы</Text>
                   </AbstractStep>
-                  <AbstractStep z:Id="i103" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i102" i:type="ExecutedStep">
                     <Childs />
                     <Id>d0bfdbdf-256f-4408-853b-dae3b52cfbd4</Id>
-                    <Parent z:Ref="i101" />
+                    <Parent z:Ref="i100" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i104">
+                      <PropertyValue z:Id="i103">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"{dict_config["MailSubject"]}. Робот завершил работу"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i105">
+                      <PropertyValue z:Id="i104">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailSubject</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Тема сообщения</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i106" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i105" i:type="ExecutedStep">
                     <Childs />
                     <Id>2d0fc26c-7bd7-49ca-92ff-86d7a0c7c415</Id>
-                    <Parent z:Ref="i101" />
+                    <Parent z:Ref="i100" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i107">
+                      <PropertyValue z:Id="i106">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"{str_sendParameters}{dict_config["MessageBody"]}"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i108">
+                      <PropertyValue z:Id="i107">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailBody</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Тело сообщения</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i109" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i108" i:type="ExecutedStep">
                     <Childs />
                     <Id>40285d86-2b68-4dcc-8d70-02441cb778ab</Id>
-                    <Parent z:Ref="i101" />
+                    <Parent z:Ref="i100" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i110">
+                      <PropertyValue z:Id="i109">
                         <PropertyName>Body</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailBody</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i110">
+                        <PropertyName>Subject</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_mailSubject</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i111">
-                        <PropertyName>Subject</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>str_mailSubject</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i112">
                         <PropertyName>IsBodyHtml</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
                         <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i113">
+                      <PropertyValue z:Id="i112">
                         <PropertyName>Port</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>25</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i113">
+                        <PropertyName>Server</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_server</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i114">
-                        <PropertyName>Server</PropertyName>
+                        <PropertyName>TimeoutMS</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>str_server</_expression>
+                        <_expression>60000</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i115">
-                        <PropertyName>Ssl</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
+                        <PropertyName>Email</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_mailAddress</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i116">
-                        <PropertyName>TimeoutMS</PropertyName>
+                        <PropertyName>SecurePassword</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>60000</_expression>
+                        <_expression>sec_mailPassword</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i117">
-                        <PropertyName>Email</PropertyName>
+                        <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>str_mailAddress</_expression>
+                        <_expression>str_mailRecip</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i118">
-                        <PropertyName>Password</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i119">
-                        <PropertyName>SecurePassword</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>sec_mailPassword</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i120">
-                        <PropertyName>Bcc</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i121">
-                        <PropertyName>Cc</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i122">
-                        <PropertyName>To</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>str_mailRecip</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i123">
                         <PropertyName>Attachments</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>list_attaches</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i124">
-                        <PropertyName>IgnoreCertCheck</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">false</_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -1097,9 +1165,10 @@
                   </AbstractStep>
                 </Childs>
                 <Id>ccb99489-c103-4efb-a530-234ddf0f1312</Id>
-                <Parent z:Ref="i100" />
+                <Parent z:Ref="i99" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
@@ -1108,193 +1177,177 @@
               </AbstractStep>
             </Childs>
             <Id>9a83587a-dfdf-4789-9b9f-2c6f8f221f9d</Id>
-            <Parent z:Ref="i99" />
+            <Parent z:Ref="i98" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
             <Text></Text>
             <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i125" i:type="ExecutedStep">
+          <AbstractStep z:Id="i119" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i126" i:type="ExecutedStep">
+              <AbstractStep z:Id="i120" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i127" i:type="CommentStep">
+                  <AbstractStep z:Id="i121" i:type="CommentStep">
                     <Childs />
                     <Id>0ef41f0e-d372-4181-8fe2-1e4249b2a93b</Id>
-                    <Parent z:Ref="i126" />
+                    <Parent z:Ref="i120" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <IsCollapsed>false</IsCollapsed>
                     <Text>Отправка необходимых уведомлений и/или выполнение иных действий в случае возникновения бизнес исключения</Text>
                   </AbstractStep>
-                  <AbstractStep z:Id="i128" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i122" i:type="ExecutedStep">
                     <Childs />
                     <Id>5ff3d32f-ca8c-4409-bbc8-57144b9057d7</Id>
-                    <Parent z:Ref="i126" />
+                    <Parent z:Ref="i120" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i129">
+                      <PropertyValue z:Id="i123">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"{dict_config["MailSubject"]}. Бизнес-ошибка!"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i130">
+                      <PropertyValue z:Id="i124">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailSubject</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Тема сообщения</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i131" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i125" i:type="ExecutedStep">
                     <Childs />
                     <Id>144598ac-04a8-4eb5-a456-46dc165b889b</Id>
-                    <Parent z:Ref="i126" />
+                    <Parent z:Ref="i120" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i132">
+                      <PropertyValue z:Id="i126">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"{str_sendParameters}Ошибка при выполнении роботом: {dict_config["MessageBody"]}"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i133">
+                      <PropertyValue z:Id="i127">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailBody</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Тело сообщения</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i134" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i128" i:type="ExecutedStep">
                     <Childs />
                     <Id>3584d779-fb59-45bf-b514-d45b3c2627a4</Id>
-                    <Parent z:Ref="i126" />
+                    <Parent z:Ref="i120" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i135">
+                      <PropertyValue z:Id="i129">
                         <PropertyName>Body</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailBody</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i130">
+                        <PropertyName>Subject</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_mailSubject</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i131">
+                        <PropertyName>IsBodyHtml</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
+                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i132">
+                        <PropertyName>Port</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>25</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i133">
+                        <PropertyName>Server</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_server</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i134">
+                        <PropertyName>TimeoutMS</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>60000</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i135">
+                        <PropertyName>Email</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>str_mailAddress</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i136">
-                        <PropertyName>Subject</PropertyName>
+                        <PropertyName>SecurePassword</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>str_mailSubject</_expression>
+                        <_expression>sec_mailPassword</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                       <PropertyValue z:Id="i137">
-                        <PropertyName>IsBodyHtml</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i138">
-                        <PropertyName>Port</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>25</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i139">
-                        <PropertyName>Server</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>str_server</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i140">
-                        <PropertyName>Ssl</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i141">
-                        <PropertyName>TimeoutMS</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>60000</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i142">
-                        <PropertyName>Email</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>str_mailAddress</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i143">
-                        <PropertyName>Password</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i144">
-                        <PropertyName>SecurePassword</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>sec_mailPassword</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i145">
-                        <PropertyName>Bcc</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i146">
-                        <PropertyName>Cc</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i147">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailRecip</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i148">
+                      <PropertyValue z:Id="i138">
                         <PropertyName>Attachments</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>list_attaches</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i149">
-                        <PropertyName>IgnoreCertCheck</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">false</_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -1303,9 +1356,10 @@
                   </AbstractStep>
                 </Childs>
                 <Id>4196a96e-80ed-43f8-935a-8546657f5b11</Id>
-                <Parent z:Ref="i125" />
+                <Parent z:Ref="i119" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
@@ -1314,229 +1368,217 @@
               </AbstractStep>
             </Childs>
             <Id>fa593fc9-8e56-4ab2-b083-78b5a2fdd0f1</Id>
-            <Parent z:Ref="i99" />
+            <Parent z:Ref="i98" />
             <PropertyValues>
-              <PropertyValue z:Id="i150">
+              <PropertyValue z:Id="i139">
                 <PropertyName>Condition</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>int_notifyType==2</_expression>
+                <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
             <Text></Text>
             <_activityFullName>BR.Core.Base.ElseIf</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i151" i:type="ExecutedStep">
+          <AbstractStep z:Id="i140" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i152" i:type="ExecutedStep">
+              <AbstractStep z:Id="i141" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i153" i:type="CommentStep">
+                  <AbstractStep z:Id="i142" i:type="CommentStep">
                     <Childs />
                     <Id>89d414f5-c47a-4df4-9cb2-e7663a3c6fd5</Id>
-                    <Parent z:Ref="i152" />
+                    <Parent z:Ref="i141" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <IsCollapsed>false</IsCollapsed>
                     <Text>Отправка необходимых уведомлений и/или выполнение иных действий в случае возникновения системного исключения
  (без уведомления пользователя)</Text>
                   </AbstractStep>
-                  <AbstractStep z:Id="i154" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i143" i:type="ExecutedStep">
                     <Childs />
                     <Id>9daaf8c2-691a-494c-8b2d-3b51f35f4908</Id>
-                    <Parent z:Ref="i152" />
+                    <Parent z:Ref="i141" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i155">
+                      <PropertyValue z:Id="i144">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"{dict_config["MailSubject"]}. Системная ошибка!"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i156">
+                      <PropertyValue z:Id="i145">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailSubject</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Тема сообщения</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i157" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i146" i:type="ExecutedStep">
                     <Childs />
                     <Id>48a56eef-252e-4dff-afcf-14f352a53fbf</Id>
-                    <Parent z:Ref="i152" />
+                    <Parent z:Ref="i141" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i158">
+                      <PropertyValue z:Id="i147">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"Ошибка при выполнении роботом: {dict_config["MessageBody"]}"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i159">
+                      <PropertyValue z:Id="i148">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailBody</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>false</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Тело сообщения</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i160" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i149" i:type="ExecutedStep">
                     <Childs />
                     <Id>6d15b330-880d-4c76-af69-9a5434c19283</Id>
-                    <Parent z:Ref="i152" />
+                    <Parent z:Ref="i141" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i161">
+                      <PropertyValue z:Id="i150">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"{str_sendParameters}Ошибка при выполнении роботом: {dict_config["MessageBody"]}"</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i162">
+                      <PropertyValue z:Id="i151">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailBody</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Тело сообщения</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i163" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i152" i:type="ExecutedStep">
                     <Childs />
                     <Id>94d74d6a-744d-4b92-a8ec-4afc9db9f1dc</Id>
-                    <Parent z:Ref="i152" />
+                    <Parent z:Ref="i141" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i164">
+                      <PropertyValue z:Id="i153">
                         <PropertyName>Body</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailBody</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i165">
+                      <PropertyValue z:Id="i154">
                         <PropertyName>Subject</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailSubject</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i166">
+                      <PropertyValue z:Id="i155">
                         <PropertyName>IsBodyHtml</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
                         <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i167">
+                      <PropertyValue z:Id="i156">
                         <PropertyName>Port</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>25</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i168">
+                      <PropertyValue z:Id="i157">
                         <PropertyName>Server</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_server</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i169">
-                        <PropertyName>Ssl</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i170">
+                      <PropertyValue z:Id="i158">
                         <PropertyName>TimeoutMS</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>60000</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i171">
+                      <PropertyValue z:Id="i159">
                         <PropertyName>Email</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailAddress</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i172">
-                        <PropertyName>Password</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i173">
+                      <PropertyValue z:Id="i160">
                         <PropertyName>SecurePassword</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>sec_mailPassword</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i174">
-                        <PropertyName>Bcc</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i175">
-                        <PropertyName>Cc</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression></_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i176">
+                      <PropertyValue z:Id="i161">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>str_mailAll</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i177">
+                      <PropertyValue z:Id="i162">
                         <PropertyName>Attachments</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>list_attaches</_expression>
+                        <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i178">
-                        <PropertyName>IgnoreCertCheck</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">false</_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
@@ -1545,9 +1587,10 @@
                   </AbstractStep>
                 </Childs>
                 <Id>d42fc7e9-d0c5-4b40-bee0-8d97ec3a56f5</Id>
-                <Parent z:Ref="i151" />
+                <Parent z:Ref="i140" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
@@ -1556,46 +1599,43 @@
               </AbstractStep>
             </Childs>
             <Id>0de0f219-54cb-42f7-b27b-b46f6396e779</Id>
-            <Parent z:Ref="i99" />
+            <Parent z:Ref="i98" />
             <PropertyValues>
-              <PropertyValue z:Id="i179">
+              <PropertyValue z:Id="i163">
                 <PropertyName>Condition</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>int_notifyType==3</_expression>
+                <_screenShotBase64 i:nil="true" />
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
             <Text></Text>
             <_activityFullName>BR.Core.Base.ElseIf</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i180" i:type="ExecutedStep">
+          <AbstractStep z:Id="i164" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i181" i:type="ExecutedStep">
+              <AbstractStep z:Id="i165" i:type="ExecutedStep">
                 <Childs />
                 <Id>928d27d8-1e23-4ccc-9dac-1d3f72cbd414</Id>
-                <Parent z:Ref="i180" />
+                <Parent z:Ref="i164" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i182">
+                  <PropertyValue z:Id="i166">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>"Не был указан параметр - in_notifyType"</_expression>
-                    <_value i:nil="true" />
-                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                  </PropertyValue>
-                  <PropertyValue z:Id="i183">
-                    <PropertyName>Exception</PropertyName>
-                    <_dataType>Value</_dataType>
-                    <_expression i:nil="true" />
+                    <_screenShotBase64 i:nil="true" />
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId>0</SelectedOptionId>
+                <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
@@ -1604,9 +1644,10 @@
               </AbstractStep>
             </Childs>
             <Id>b4ff0f9d-8c3f-432d-9325-da812b37432d</Id>
-            <Parent z:Ref="i99" />
+            <Parent z:Ref="i98" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
@@ -1617,15 +1658,17 @@
         <Id>74d3f02e-70fa-4244-8e18-ea6053a88055</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i184">
+          <PropertyValue z:Id="i167">
             <PropertyName>Condition</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>int_notifyType==1</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
@@ -1637,6 +1680,7 @@
     <Parent i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
+    <AutoCloseMode>None</AutoCloseMode>
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
     <RetryCount>-1</RetryCount>
@@ -1646,42 +1690,42 @@
   <Name>Notification.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i185">
+    <Parameter z:Id="i168">
       <DefaultValueExpression>3</DefaultValueExpression>
       <Description>тип уведомления</Description>
       <Name>int_notifyType</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i186">
+    <Parameter z:Id="i169">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>словарь с конфигом</Description>
       <Name>dict_config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i187">
+    <Parameter z:Id="i170">
       <DefaultValueExpression>new List&lt;string&gt;{}</DefaultValueExpression>
       <Description>Коллекция вложений</Description>
       <Name>list_attaches</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i188">
+    <Parameter z:Id="i171">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>sec_mailPassword</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Security.SecureString</TypeString>
     </Parameter>
-    <Parameter z:Id="i189">
+    <Parameter z:Id="i172">
       <DefaultValueExpression>false</DefaultValueExpression>
       <Description></Description>
       <Name>bool_takeScreenshot</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
-    <Parameter z:Id="i190">
+    <Parameter z:Id="i173">
       <DefaultValueExpression>new Dictionary&lt;string,string&gt;{}</DefaultValueExpression>
       <Description></Description>
       <Name>dict_sendParameters</Name>
@@ -1689,6 +1733,12 @@
       <TypeString>System.Collections.IDictionary</TypeString>
     </Parameter>
   </Params>
+  <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>2</d2p1:_Major>
+    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
   <Version i:nil="true" />
