@@ -59,6 +59,58 @@ chrome - Google Chrome</Text>
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
+              <AbstractStep z:Id="i9" i:type="ExecutedStep">
+                <Childs />
+                <Id>d9e32e7b-50f0-4661-9f4b-ee61ea9268a0</Id>
+                <Parent z:Ref="i5" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i10">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>(Activities.DataBaseSQL.Core.DataBaseShareMethodConnection)dict_config["PostgreSQL"]</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i11">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>PostgreSQL</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Skip</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Соединение с БД</Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i12" i:type="ExecutedStep">
+                <Childs />
+                <Id>92f1dec4-f4cd-42ac-816d-fa6cc30fa88c</Id>
+                <Parent z:Ref="i5" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i13">
+                    <PropertyName>InSqlConnection</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>PostgreSQL</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Skip</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>Activities.DataBaseSQL.RemoveConnection</_activityFullName>
+              </AbstractStep>
             </Childs>
             <Id>fe5e46fa-bdb5-4a0e-b52f-1e583f955aba</Id>
             <Parent z:Ref="i4" />
@@ -71,7 +123,7 @@ chrome - Google Chrome</Text>
             <Text></Text>
             <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i9" i:type="ExecutedStep">
+          <AbstractStep z:Id="i14" i:type="ExecutedStep">
             <Childs />
             <Id>e2c33d42-e8d5-4e03-9f2d-c6de417ede28</Id>
             <Parent z:Ref="i4" />
@@ -88,7 +140,7 @@ chrome - Google Chrome</Text>
         <Id>4d0c2e7d-a941-4c9a-a21c-14e35ef23878</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i10">
+          <PropertyValue z:Id="i15">
             <PropertyName>Condition</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>list_processesToKill.Count==0</_expression>
@@ -105,14 +157,14 @@ chrome - Google Chrome</Text>
         <Text>Перечень процессов, которые нужно завершить по умолчанию</Text>
         <_activityFullName>BR.Core.Base.If</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i11" i:type="ExecutedStep">
+      <AbstractStep z:Id="i16" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i12" i:type="ExecutedStep">
+          <AbstractStep z:Id="i17" i:type="ExecutedStep">
             <Childs />
             <Id>4dd2dfd7-3fe1-44b8-bad3-6e31f51789a5</Id>
-            <Parent z:Ref="i11" />
+            <Parent z:Ref="i16" />
             <PropertyValues>
-              <PropertyValue z:Id="i13">
+              <PropertyValue z:Id="i18">
                 <PropertyName>OnlyCurrenUser</PropertyName>
                 <_dataType>Value</_dataType>
                 <_expression i:nil="true" />
@@ -120,7 +172,7 @@ chrome - Google Chrome</Text>
                 <_value xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:boolean">true</_value>
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i14">
+              <PropertyValue z:Id="i19">
                 <PropertyName>Processes</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>list_currentUserProcesses</_expression>
@@ -137,12 +189,12 @@ chrome - Google Chrome</Text>
             <Text>Получить список активных процессов - Текущий пользователь</Text>
             <_activityFullName>Activities.Processes.GetProcesses</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i15" i:type="ExecutedStep">
+          <AbstractStep z:Id="i20" i:type="ExecutedStep">
             <Childs />
             <Id>134a0553-53f5-478b-9933-16d5d023b0c9</Id>
-            <Parent z:Ref="i11" />
+            <Parent z:Ref="i16" />
             <PropertyValues>
-              <PropertyValue z:Id="i16">
+              <PropertyValue z:Id="i21">
                 <PropertyName>CSCode</PropertyName>
                 <_dataType>Value</_dataType>
                 <_expression i:nil="true" />
@@ -159,12 +211,12 @@ chrome - Google Chrome</Text>
             <Text>Выполнить - Закрыть приложение [Пропустить при ошибке]</Text>
             <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i17" i:type="ExecutedStep">
+          <AbstractStep z:Id="i22" i:type="ExecutedStep">
             <Childs />
             <Id>01f903d8-c8b3-4f31-afc7-a7e1854999a0</Id>
-            <Parent z:Ref="i11" />
+            <Parent z:Ref="i16" />
             <PropertyValues>
-              <PropertyValue z:Id="i18">
+              <PropertyValue z:Id="i23">
                 <PropertyName>Count</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>1</_expression>
@@ -181,12 +233,12 @@ chrome - Google Chrome</Text>
             <Text>Ожидание - Для попытки корректного закрытия приложения</Text>
             <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i19" i:type="ExecutedStep">
+          <AbstractStep z:Id="i24" i:type="ExecutedStep">
             <Childs />
             <Id>792db8ab-3ad0-4d89-a788-10d2716ba856</Id>
-            <Parent z:Ref="i11" />
+            <Parent z:Ref="i16" />
             <PropertyValues>
-              <PropertyValue z:Id="i20">
+              <PropertyValue z:Id="i25">
                 <PropertyName>OnlyCurrenUser</PropertyName>
                 <_dataType>Value</_dataType>
                 <_expression i:nil="true" />
@@ -194,7 +246,7 @@ chrome - Google Chrome</Text>
                 <_value xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:boolean">true</_value>
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i21">
+              <PropertyValue z:Id="i26">
                 <PropertyName>ProcessName</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>process</_expression>
@@ -215,7 +267,7 @@ chrome - Google Chrome</Text>
         <Id>85c5554c-cc91-4480-8b6b-0dd7997f07ee</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i22">
+          <PropertyValue z:Id="i27">
             <PropertyName>Collection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>list_processesToKill</_expression>
@@ -223,7 +275,7 @@ chrome - Google Chrome</Text>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i23">
+          <PropertyValue z:Id="i28">
             <PropertyName>Iterator</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>process</_expression>
@@ -231,7 +283,7 @@ chrome - Google Chrome</Text>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i24">
+          <PropertyValue z:Id="i29">
             <PropertyName>Counter</PropertyName>
             <_dataType>Value</_dataType>
             <_expression></_expression>
@@ -248,12 +300,12 @@ chrome - Google Chrome</Text>
         <Text>Цикл для каждого</Text>
         <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i25" i:type="ExecutedStep">
+      <AbstractStep z:Id="i30" i:type="ExecutedStep">
         <Childs />
         <Id>afd7eb37-5d42-4fac-aa3c-5e5586a32c5c</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i26">
+          <PropertyValue z:Id="i31">
             <PropertyName>Count</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>2</_expression>
@@ -287,7 +339,7 @@ chrome - Google Chrome</Text>
     <d2p1:string>PIX.Core.Exceptions</d2p1:string>
   </Namespaces>
   <Params>
-    <Parameter z:Id="i27">
+    <Parameter z:Id="i32">
       <DefaultValueExpression>new List&lt;String&gt;{}</DefaultValueExpression>
       <Description></Description>
       <Name>list_processesToKill</Name>

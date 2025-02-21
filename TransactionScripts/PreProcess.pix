@@ -281,7 +281,8 @@
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
-            <Text></Text>
+            <Text>Try 
+Cоединение с БД</Text>
             <_activityFullName>BR.Core.Base.Try</_activityFullName>
           </AbstractStep>
           <AbstractStep z:Id="i31" i:type="ExecutedStep">
