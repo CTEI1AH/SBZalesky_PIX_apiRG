@@ -403,13 +403,13 @@
                       </AbstractStep>
                       <AbstractStep z:Id="i46" i:type="ExecutedStep">
                         <Childs />
-                        <Id>7127bef7-e559-4b48-a312-fd6cb6348669</Id>
+                        <Id>8db2a295-f7e1-4540-8f66-c7a990339589</Id>
                         <Parent z:Ref="i13" />
                         <PropertyValues>
                           <PropertyValue z:Id="i47">
-                            <PropertyName>Text</PropertyName>
+                            <PropertyName>InSqlConnection</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression>$"LogStep: Все транзакции в очереди '{str_queueName}' созданы"</_expression>
+                            <_expression>PostgreSQL</_expression>
                             <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -420,61 +420,61 @@
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
-                        <Text>LogStep -  Все транзакции в очереди созданы</Text>
-                        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+                        <Text></Text>
+                        <_activityFullName>Activities.DataBaseSQL.RemoveConnection</_activityFullName>
                       </AbstractStep>
                       <AbstractStep z:Id="i48" i:type="ExecutedStep">
                         <Childs>
                           <AbstractStep z:Id="i49" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>d3493668-06a4-4b76-b258-7dfdcaf55787</Id>
+                            <Parent z:Ref="i48" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i50">
+                                <PropertyName>Value</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>$"{rowB["brend"]}"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i51">
+                                <PropertyName>To</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>dict_parameters["brend"]</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i52" i:type="ExecutedStep">
                             <Childs>
-                              <AbstractStep z:Id="i50" i:type="CommentStep">
+                              <AbstractStep z:Id="i53" i:type="CommentStep">
                                 <Childs />
                                 <Id>832d20e8-d546-4cfe-b4a3-172f885b90d8</Id>
-                                <Parent z:Ref="i49" />
+                                <Parent z:Ref="i52" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
                                 <IsCollapsed>false</IsCollapsed>
                                 <Text>Все параметры транзакции добавляем в качестве переменных в словарь dict_Parameters.</Text>
                               </AbstractStep>
-                              <AbstractStep z:Id="i51" i:type="ExecutedStep">
-                                <Childs />
-                                <Id>d3493668-06a4-4b76-b258-7dfdcaf55787</Id>
-                                <Parent z:Ref="i49" />
-                                <PropertyValues>
-                                  <PropertyValue z:Id="i52">
-                                    <PropertyName>Value</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression>$"{rowB[0]}"</_expression>
-                                    <_screenShotBase64 i:nil="true" />
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                  <PropertyValue z:Id="i53">
-                                    <PropertyName>To</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression>dict_parameters["brend"]</_expression>
-                                    <_screenShotBase64 i:nil="true" />
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                </PropertyValues>
-                                <SelectedOptionId i:nil="true" />
-                                <AutoCloseMode>None</AutoCloseMode>
-                                <EnableStatus>true</EnableStatus>
-                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                <RetryCount>-1</RetryCount>
-                                <Text></Text>
-                                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-                              </AbstractStep>
                               <AbstractStep z:Id="i54" i:type="ExecutedStep">
                                 <Childs />
                                 <Id>a5d85712-3000-41e1-ab10-096fa8ffde63</Id>
-                                <Parent z:Ref="i49" />
+                                <Parent z:Ref="i52" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i55">
                                     <PropertyName>Value</PropertyName>
                                     <_dataType>Expression</_dataType>
-                                    <_expression>$"{rowC[0]}"</_expression>
+                                    <_expression>$"{rowC["gorod"]}"</_expression>
                                     <_screenShotBase64 i:nil="true" />
                                     <_value i:nil="true" />
                                     <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -499,7 +499,7 @@
                               <AbstractStep z:Id="i57" i:type="CommentStep">
                                 <Childs />
                                 <Id>84121c68-3c2e-44c5-861f-0a2e9ac8db67</Id>
-                                <Parent z:Ref="i49" />
+                                <Parent z:Ref="i52" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
                                 <IsCollapsed>false</IsCollapsed>
@@ -597,7 +597,7 @@
                                   </AbstractStep>
                                 </Childs>
                                 <Id>9cd92fc1-25ee-4c07-9722-9a31ff0baa0e</Id>
-                                <Parent z:Ref="i49" />
+                                <Parent z:Ref="i52" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i67">
                                     <PropertyName>Counter</PropertyName>
